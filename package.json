@@ -1,0 +1,19 @@
+{
+  "name": "projeto-numeros-romanos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^13.11.1",
+    "babel": "^6.23.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  }
+}
