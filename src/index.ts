@@ -1,6 +1,6 @@
 const readline = require('readline')
 
-function toRoman(value) {
+const toRoman = (value: number) => {
   let result = ''
   let remainingNumber = value
   const mappings = [
@@ -9,7 +9,7 @@ function toRoman(value) {
     { arabic: 500, roman: 'D' },
     { arabic: 400, roman: 'CD' },
     { arabic: 100, roman: 'C' },
-    { arabic:90, roman: 'XC' },
+    { arabic: 90, roman: 'XC' },
     { arabic: 50, roman: 'L' },
     { arabic: 40, roman: 'XL' },
     { arabic: 10, roman: 'X' },
@@ -29,10 +29,10 @@ function toRoman(value) {
   return result;
 }
 
-function toArabic(romanNumber) {
+const toArabic = (romanNumber) => {
   let result = 0
   let remainingNumber = romanNumber
- const mappings = [
+  const mappings = [
     { arabic:1000, roman: 'M' },
     { arabic: 900, roman: 'CM' },
     { arabic: 500, roman: 'D' },
@@ -49,7 +49,7 @@ function toArabic(romanNumber) {
   ]
 
     while (remainingNumber.length) {
-   
+
      mappings.forEach((mapping) => {
         while(remainingNumber.startsWith(mapping.roman)) {
           const substr = remainingNumber.slice(mapping.roman.length, romanNumber.length)
@@ -65,7 +65,7 @@ function toArabic(romanNumber) {
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
-});
+})
 
 rl.question('What do you think of Node.js? ', (answer) => {
   const arabic = toArabic(answer)
