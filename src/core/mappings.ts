@@ -1,5 +1,6 @@
-import { IMappingArabicRoman } from './interface'
-import { ERomanNumber, EArabicNumber } from './enums'
+import { IMappingArabicRoman } from '../interfaces/IMappingArabicRoman'
+import { EArabicNumber } from '../enums/EArabicNumber'
+import { ERomanNumber } from '../enums/ERomanNumber'
 
 export const mappings: IMappingArabicRoman[] = [
     { arabic: EArabicNumber.ONE_THOUSAND, roman: ERomanNumber.ONE_THOUSAND },

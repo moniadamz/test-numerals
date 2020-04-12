@@ -1,4 +1,4 @@
-import * as convert from '../number-parsers'
+import * as convert from '../src/core/number-parsers'
 describe('toArabic function', ()=> {
     it('should convert successfuly 10 in roman to arabic', () => {
         expect(convert.toArabic('X')).toBe(10)

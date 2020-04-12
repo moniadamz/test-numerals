@@ -1,5 +1,5 @@
-import * as method from '../input'
-import * as convert from '../number-parsers'
+import * as method from '../src/core/input'
+import * as convert from '../src/core/number-parsers'
 
 jest.mock('readline')
 describe('program', () => {

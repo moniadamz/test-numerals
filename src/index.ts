@@ -1,3 +1,3 @@
-import { getUserInput } from './input'
+import { getUserInput } from './core/input'
 
 getUserInput()

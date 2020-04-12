@@ -1,5 +1,5 @@
 import { mappings } from './mappings'
-import { EArabicNumber, ERomanNumber } from './enums'
+import { EArabicNumber } from '../enums/EArabicNumber'
 
 export function toRoman (arabicNumber: number) {
   if (!arabicIsValid(arabicNumber)) return 'Expressão Inválida.'
