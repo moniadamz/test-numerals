@@ -2,7 +2,7 @@
 Resolução do Kata Roman Numerals que pode ser encontrado nesse link: http://codingdojo.org/kata/RomanNumerals/ .
 
 ## Tecnologias:
- - NodeJS v12.16.1 e Typescript v3.8.3
+ - NodeJS v12.16.1, Typescript v3.8.3 e Jest 25.3.0
 
 ## Como funciona:
 - O console espera uma entrada do usuário em uma função recursiva, para que não seja necessário rodar o projeto novamente a cada entrada. O loop é interrompido com a palavra "exit";
