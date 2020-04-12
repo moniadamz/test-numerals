@@ -10,7 +10,7 @@ Resolução do Kata Roman Numerals que pode ser encontrado nesse link: http://co
 - São aceitos numerais acima de zero e menores que três mil;
 
 ## Como buildar:
--  É nessário executar o comando ```npm install```. Execute também ```npm install typesript -g``` caso não tenha o typescript no PATH do computador.  Após, execute ```tsc```.
+-  É nessário executar o comando ```npm install```. Execute também ```npm install typescript -g``` caso não tenha o typescript no PATH do computador.  Após, execute ```tsc```.
 
 ## Como testar:
 - ``` npm run test ```
