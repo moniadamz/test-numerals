@@ -9,11 +9,11 @@ describe('toArabic function', ()=> {
     })
 
     it('should return an error message', () => {
-        expect(convert.toArabic('IV5')).toEqual("Expressão Inválida.")
+        expect(convert.toArabic('IV5')).toEqual('Expressão Inválida.')
     })
 
     it('should return an error message', () => {
-        expect(convert.toArabic('XXXX')).toEqual("Expressão Inválida.")
+        expect(convert.toArabic('XXXX')).toEqual('Expressão Inválida.')
     })
 })
 
@@ -34,5 +34,13 @@ describe('convertInput function', ()=> {
 
     it('should convert successfuly CDXLIV in arabic to roman', () => {
         expect(convert.convertInput('CDXLIV')).toBe(444)
+    })
+
+    it('should return an error message when invalid input', () => {
+        expect(convert.convertInput('9C')).toBe('Expressão Inválida.')
+    })
+
+    it('should return an error message when invalid input', () => {
+        expect(convert.convertInput('bb2')).toBe('Expressão Inválida.')
     })
 })

@@ -46,7 +46,12 @@ export function romanIsValid(input: string){
 }
 
 export function convertInput(input: string) {
+  if(!isInt(input)) return toArabic(input)
   const convertedInput = parseInt(input)
-  if(Number.isInteger(convertedInput)) return toRoman(convertedInput)
-  return toArabic(input)
+  return toRoman(convertedInput)
+}
+
+function isInt(n: any) {
+  const parse = Number(n)
+  return parse == n && parse % 1 === 0
 }
